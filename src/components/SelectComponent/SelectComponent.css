@@ -1,0 +1,17 @@
+.form-control {
+    width: 100%; /* Asegura que el FormControl tome todo el ancho del contenedor */
+  }
+  
+  .custom-select .MuiOutlinedInput-root {
+    border-color: rgba(0, 0, 0, 0.23);
+    width: 100%; /* Asegura que el Select tome todo el ancho del FormControl */
+  }
+  
+  .custom-select .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #40a9ff;
+  }
+  
+  .custom-select .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #40a9ff;
+  }
+  

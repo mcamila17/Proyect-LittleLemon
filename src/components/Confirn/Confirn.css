@@ -1,0 +1,30 @@
+.confirm{
+    background: rgb(73, 94, 87) ;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20%;
+}
+.confirm h1{
+    color: rgb(244, 206, 20);
+    font-family: "Markazi Text", serif;
+    font-size: 4rem;
+    padding-top: 40px;
+}
+.confirm img{
+    width: 40%;
+    border-radius: 15px;
+}
+@media (max-width: 767px){
+    .confirm{
+        flex-direction: column;
+        padding: 5px 8% 40px;
+        align-items: center;
+    }
+    .confirm h1{
+        font-size: 2rem;
+        padding-bottom: 35px;
+    }
+    .confirm img{
+        width: 60%;
+    }
+}

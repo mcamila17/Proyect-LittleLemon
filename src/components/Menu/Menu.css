@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+.menu{
+    padding: 0 20%;
+    display: flex;
+    flex-direction: column;
+}
+.menu-bottom{
+    display: flex;
+    justify-content: space-around;
+    gap: 200px;
+    margin-top: 2.5rem;
+}
+.menu-top{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-top h1{
+    font-size: 4rem;
+    font-family: "Markazi Text", serif;
+    font-weight: 400;
+}
+.menu-top button{
+    margin: 1rem;
+    background: rgb(244, 206, 20);
+    border-radius: 15px;
+    border: none;
+    padding: 1px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+.menu-top button:hover {
+    background-color: #e0c700;
+}
+.menu-bottom .cards{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 460px;
+    background: rgb(237, 239, 238);
+    gap: 25px;
+    border-radius: 10px;
+    align-items: center;
+}
+.menu-bottom img{
+    width: 250px;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+.cards .delivery{
+    width: 8%;
+}
+.cards h4{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.title-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+}
+.cards h2, h3{
+    font-size: 1.2rem;
+    font-family: "Markazi Text", serif;
+    font-weight: 1000;
+}
+.cards h3{
+    color: rgb(238, 153, 114);
+}
+.cards p{
+    color: rgb(73, 94, 87);
+    font-style: normal;
+    padding: 0 20px;
+}
+@media (max-width: 1200px) and (min-width: 768px) {
+    .menu {
+        padding: 0 10%;
+    }
+
+    .menu-bottom {
+        gap: 50px;
+    }
+
+    .menu-bottom .cards {
+        width: 45%; 
+    }
+}
+
+@media (max-width: 767px) {
+    .menu {
+        padding: 0 5%;
+    }
+
+    .menu-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu-top h1 {
+        font-size: 3rem;
+    }
+
+    .menu-top button {
+        width: 40%;
+    }
+
+    .menu-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .menu-bottom .cards {
+        width: 100%; 
+    }
+    .menu-bottom img{
+        border-radius: 15px;
+        overflow: hidden;
+    }
+}

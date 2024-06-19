@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+.reserve {
+    width: 100%;
+    color: white;
+    background: rgb(73, 94, 87);
+    padding: 15px 20%;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reserve-left {
+    width: 60%;
+}
+
+.reserve-left h1 {
+    color: rgb(244, 206, 20);
+    font-family: "Markazi Text", serif;
+    font-size: 4rem;
+    padding-top: 40px;
+}
+.reserve-left h2 {
+    font-family: "Markazi Text", serif;
+    font-size: 2rem;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+.reserve-left p {
+    width: 80%;
+    justify-content: left;
+    padding-bottom: 10px;
+}
+.reserve button {
+    background: rgb(244, 206, 20);
+    border-radius: 15px;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 30px 0 40px 0;
+}
+.reserve-left button:hover {
+    background-color: #e0c700;
+}
+.reserve img {
+    width: 15%;
+    border-radius: 20px;
+}
+.photo {
+    position: absolute;
+    top: 20px;
+    right: 20%;
+}
+@media (max-width: 992px) and (min-width: 768px) {
+    .reserve {
+        padding: 15px 10%;
+        flex-direction: column;
+    }
+
+    .reserve-left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .reserve-left p {
+        width: 100%;
+    }
+
+    .reserve img {
+        width: 50%;
+        margin-top: 20px;
+        position: static;
+    }
+}
+
+@media (max-width: 767px) {
+    .reserve {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px 5%;
+    }
+
+    .reserve-left {
+        width: 100%;
+    }
+
+    .reserve-left p {
+        width: 100%;
+    }
+
+    .reserve img {
+        width: 80%;
+        margin-top: 20px;
+        position: static;
+    }
+}
